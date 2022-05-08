@@ -20,3 +20,4 @@ Create a simple API which allows users to make a booking for given dates, manage
 
 A simple API built using Symfony with 5 endpoints (detailed in the Postman Collection below).
 
+https://gist.github.com/mlaingweb/5ecb5608ac063b4bd5893b5b6fdb798a
