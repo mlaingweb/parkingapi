@@ -7,14 +7,24 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-bundle": "^2.6",
+        "doctrine/doctrine-migrations-bundle": "^3.2",
+        "doctrine/orm": "^2.12",
+        "nesbot/carbon": "^2.58",
         "symfony/console": "5.4.*",
         "symfony/dotenv": "5.4.*",
         "symfony/flex": "^1.17|^2",
         "symfony/framework-bundle": "5.4.*",
+        "symfony/proxy-manager-bridge": "5.4.*",
         "symfony/runtime": "5.4.*",
         "symfony/yaml": "5.4.*"
     },
     "require-dev": {
+        "codeception/module-asserts": "^2.0",
+        "codeception/module-datafactory": "^2.0",
+        "codeception/module-doctrine2": "^2.0",
+        "codeception/module-symfony": "^2.1",
+        "symfony/maker-bundle": "^1.41"
     },
     "config": {
         "allow-plugins": {

@@ -1,0 +1,22 @@
+# Codeception Test Suite Configuration
+#
+# Suite for unit or integration tests.
+
+actor: UnitTester
+modules:
+    enabled:
+        - Symfony:
+              app_path: 'src'
+              environment: 'test'
+              debug: true
+              em_service: 'doctrine.orm.entity_manager'
+        - DataFactory:
+              factories: tests/_support/factories
+              depends: Doctrine2
+        - Doctrine2:
+              depends: Symfony
+              cleanup: true
+        - Asserts
+        - \App\Tests\Helper\Unit
+        - \App\Tests\Helper\Factories
+bootstrap: ../bootstrap.php
