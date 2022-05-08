@@ -21,3 +21,19 @@ Create a simple API which allows users to make a booking for given dates, manage
 A simple API built using Symfony with 5 endpoints (detailed in the Postman Collection below).
 
 https://gist.github.com/mlaingweb/5ecb5608ac063b4bd5893b5b6fdb798a
+
+## Unit Tests
+
+Unit tests can be run using Codeception
+
+```shell
+vendor/bin/codecept run unit tests/unit/BookingServiceCest.php
+```
+
+## Fixtures
+
+Fixtures can be used to seed the database with sample data.
+
+```shell
+php bin/console doctrine:fixtures:load
+```
